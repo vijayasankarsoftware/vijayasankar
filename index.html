@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index_files/css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script src="./index_files/js/script.js"></script>
+    <title>Vijayasankar Murugan</title>
+</head>
+
+<body>
+    <div class="portfolio-container" id="portfolio-container">
+        <button id="scrollToTopBtn" class="btn scrollbtn" style="display: none; border: none;">
+            <i class="fas fa-arrow-up" onclick="scrollToDiv('portfolio-container')"
+                style="background-color: #f98704; padding: 20px; color: white; border-radius: 50px; bottom: 20px; right: 20px;"></i>
+        </button>
+        <div class="toolbar">
+            <div class="toolbar-left">
+                <h1>Vijay<span style="color: #f98704;">Soft</span></h1>
+
+            </div>
+            <div class="toolbar-right">
+                <ul>
+                    <li class="o-list"><a onclick="scrollToDiv('services')" style="color: #f98704;">Services</a></li>
+                    <li class="o-list"><a onclick="scrollToDiv('projects-exp')" style="color: #f98704;">Projects</a></li>
+                    <li class="o-list"><a onclick="scrollToDiv('contact-us')" style="color: #f98704;">Contact Us</a></li>
+                    <button class="hireme-btn" onclick="scrollToDiv('contact-us')">Hire Me</button>
+                    <div class="tool-nav">
+                        <nav class="navbar navbar-expand-lg navbar-light" >
+                        <div class="container-fluid justify-content-end">
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                                aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse" id="navbarNav">
+                                <ul class="navbar-nav">
+                                    <li class="nav-item">
+                                        <a class="nav-link" onclick="scrollToDiv('services')">Services</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" onclick="scrollToDiv('projects-exp')" >Projects</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" onclick="scrollToDiv('contact-us')">Contact Us</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+                    </div>
+                </ul>
+            </div>
+        </div>
+        <div class="home">
+            <div class="about-me">
+                <h1><span style="color: #f98704">I</span>'m <span style="color: #f98704">VIJAYASANKAR</span></h1>
+                <p style="text-align: justify;">I am a seasoned full stack web development professional dedicated to
+                    delivering
+                    innovative and high-performance solutions. With a meticulous approach to coding and a passion for
+                    creating seamless user experiences, I specialize in crafting bespoke websites that align with client
+                    objectives and industry best practices</p>
+                <div class="container mt-6" style="margin-top: 40px;">
+                    <div class="row justify-content-center">
+                        <div class="col-auto max-3">
+                            <button class="hireme-btn1" onclick="downloadCV()">Download CV</button>
+                        </div>
+                        <div class="col-auto max-3">
+                            <button class="hireme-btn-outlined" onclick="scrollToDiv('contact-us')">Hire Me</button>
+                        </div>
+
+                        <!-- Add more social icons as needed -->
+                    </div>
+                </div>
+                <div class="container mt-6" style="margin-top: 30px;">
+                    <div class="row justify-content-center">
+                        <div class="col-auto max-3">
+                            <a href="https://www.linkedin.com/in/vijayasankarsoftwareinfo/"
+                                class="text-decoration-none"><i class="fab fa-linkedin fs-2 custom-icon-color"></i></a>
+                        </div>
+                        <div class="col-auto max-3">
+                            <a href="https://www.youtube.com/channel/UCnShImWEdbCUkDa3uUEt-IA"
+                                class="text-decoration-none"><i class="fab fa-youtube fs-2 custom-icon-color"></i></a>
+                        </div>
+                        <div class="col-auto max-3">
+                            <a href="https://github.com/vijayasankarsoftware" class="text-decoration-none"><i
+                                    class="fab fa-github fs-2 custom-icon-color"></i></a>
+                        </div>
+                        <div class="col-auto max-3">
+                            <a href="https://www.hackerrank.com/profile/vijayasankarsof1"
+                                class="text-decoration-none"><i
+                                    class="fab fa-hackerrank fs-2 custom-icon-color"></i></a>
+                        </div>
+                        <!-- Add more social icons as needed -->
+                    </div>
+                </div>
+            </div>
+            <div class="my-image">
+                <img src="images/vijayasankar.f46140a50b6fecbf900c.png" class="myimage" height="650px" width="500px"
+                    alt="">
+            </div>
+        </div>
+        <div class="projects-exp" id="projects-exp" style="margin-top: 100px;">
+            <header class="Header">My Project Experience</header>
+            <div id="carouselExample" style="margin-top: 20px;" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+
+                    <div class="carousel-item active">
+                        <img src="projects/project1.jpg"
+                            style="border: 1px solid #f98704; width: 100%; height: 100%; border-radius: 20px;"
+                            class="d-block w-100" alt="Image 2">
+
+                    </div>
+                    <div class="carousel-item">
+                        <img src="projects/project3.jpg"
+                            style="border: 1px solid #f98704; width: 100%; height: 100%; border-radius: 20px;"
+                            class="d-block w-100" alt="Image 3">
+
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExample" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only"></span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExample" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only"></span>
+                </a>
+            </div>
+        </div>
+        <div class="certificatoins" style="margin-top: 100px;">
+            <header class="Header">I Certified with</header>
+            <div id="carouselEx"
+                style="margin-top: 20px; width: 100%; height: 100%; margin-left: auto; margin-right: auto;"
+                class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="certificates/certificate1.png" class="d-block w-100 h-50" alt="Image 1">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="certificates/certificate2.png" class="d-block w-100 h-50" alt="Image 2">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="certificates/certificate13.png" class="d-block w-100 h-50" alt="Image 3">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="certificates/certificate4.png" class="d-block w-100 h-50" alt="Image 3">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="certificates/certificate5.png" class="d-block w-100 h-50" alt="Image 3">
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselEx" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only"></span>
+                </a>
+                <a class="carousel-control-next" href="#carouselEx" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only"></span>
+                </a>
+            </div>
+        </div>
+
+        <div class="services" id="services">
+            <header class="Header">My Services</header>
+            <div class="service-row1">
+                <div class="service-col-left">
+                    <img src="images/development-4536630_960_720.webp" class="serviceimage" height="500px" width="500px"
+                        style="margin-top: 50px;" alt="">
+                </div>
+                <div class="service-col-right" style="width: 100%;">
+                    <header class="service-head">Web Development</header>
+                    <p class="service-content">As a dedicated web developer, I bring a wealth of expertise in creating
+                        sophisticated and user-centric digital solutions. Proficient in a myriad of programming
+                        languages and frameworks, I specialize in crafting elegant and responsive websites that
+                        seamlessly blend aesthetics with functionality.</p>
+                </div>
+            </div>
+            <div class="service-row2" style="width: 100%;">
+                <div class="service-col-left" style="width: 100%;">
+                    <header class="service-head">Deployment</header>
+                    <p class="service-content">
+                        As a seasoned project deployer, I orchestrate the seamless transition of software solutions from
+                        development to deployment. My expertise lies in implementing robust deployment strategies,
+                        ensuring the efficient and secure delivery of applications. With a meticulous eye for detail, I
+                        navigate the intricacies of various environments, optimizing configurations for scalability and
+                        performance. Leveraging cutting-edge tools and methodologies, I streamline deployment pipelines,
+                        minimizing downtime and enhancing overall project efficiency.</p>
+                </div>
+                <div class="service-col-right" style="width: 40%;">
+                    <img class="deployment-service" src="images/2535503.png" class="serviceimage" alt="">
+                </div>
+            </div>
+            <div class="service-row3">
+                <div class="service-col-left" style="width: 40%;">
+                    <img src="images/API-Management.png" height="500px" class="serviceimage" width="500px" alt="">
+
+                </div>
+                <div class="service-col-right" style="width: 100%;">
+                    <header class="service-head">Coding Tutorials</header>
+                    <p class="service-content">As the face behind Codify, my YouTube channel dedicated to coding
+                        tutorials, I am passionate about demystifying the world of programming for enthusiasts and
+                        learners alike. With a knack for clear and concise explanations, I guide my audience through
+                        diverse coding concepts, languages, and real-world applications. Leveraging my extensive
+                        background in software development, I curate content that fosters a deep understanding of coding
+                        principles. Codify serves as a hub for hands-on projects, best practices, and industry insights,
+                        fostering a vibrant community of learners.</p>
+                    <p class="service-content">Discover a collection of my compelling projects and educational tutorials
+                        by clicking <a style="color: #f98704; cursor: pointer;"
+                            href="https://codewithvijayasankar.com">CodeWithVijayasankar</a> offering a wealth of insights and practical
+                        knowledge for enthusiasts and learners in the realm of coding and software development.</p>
+
+                </div>
+            </div>
+        </div>
+
+        <div id="contact-us" class=" d-flex justify-content-center align-items-center">
+            <div class="input-container" data-aos="fade-up">
+                <header class="Header">Contact Us</header>
+                <form>
+                    <div class="mb-3">
+                        <label for="idEmail" class="form-label">Email address</label>
+                        <input type="email" class="form-control" id="idEmail" aria-describedby="emailHelp">
+                        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="idContentArea" class="form-label">Message</label>
+                        <textarea class="form-control" id="idContentArea" rows="3"></textarea>
+                    </div>
+                    <button type="button" class="hireme-btn" onclick="SendMail()">Send</button>
+                </form>
+            </div>
+        </div>
+        <div class="container mt-6" style="margin-top: 100px;">
+            <div class="row justify-content-center">
+                <div class="col-auto max-3">
+                    <a href="https://www.linkedin.com/in/vijayasankarsoftwareinfo/" class="text-decoration-none"><i
+                            class="fab fa-linkedin fs-2 custom-icon-color"></i></a>
+                </div>
+                <div class="col-auto max-3">
+                    <a href="https://www.youtube.com/channel/UCnShImWEdbCUkDa3uUEt-IA" class="text-decoration-none"><i
+                            class="fab fa-youtube fs-2 custom-icon-color"></i></a>
+                </div>
+                <div class="col-auto max-3">
+                    <a href="https://github.com/vijayasankarsoftware" class="text-decoration-none"><i
+                            class="fab fa-github fs-2 custom-icon-color"></i></a>
+                </div>
+                <div class="col-auto max-3">
+                    <a href="https://www.hackerrank.com/profile/vijayasankarsof1" class="text-decoration-none"><i
+                            class="fab fa-hackerrank fs-2 custom-icon-color"></i></a>
+                </div>
+                <!-- Add more social icons as needed -->
+            </div>
+        </div>
+        <footer>
+            <h1 class="copyrights">&copy; 2024 VijaySoft. All rights reserved.</h1>
+        </footer>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.8/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>

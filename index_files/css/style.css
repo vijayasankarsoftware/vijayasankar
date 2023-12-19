@@ -1,0 +1,446 @@
+body
+{
+    background-repeat: no-repeat;
+    font-family: 'Roboto', sans-serif;
+   
+    overflow-x: hidden;
+}
+
+.portfolio-container
+{
+    margin: 30px;
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+    /* Set the width of the scrollbar */
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #f98704;
+    /* Set the color of the thumb */
+    border-radius: 6px;
+    /* Set the border radius of the thumb */
+}
+
+::-webkit-scrollbar-track {
+    background-color: white;
+    /* Set the color of the track */
+}
+
+.toolbar-left
+{
+    float: left;
+    display: flex;
+}
+
+.toolbar-left h1
+{
+    margin-left: 20px;
+}
+
+.toolbar-right
+{
+    float: right;
+    display: flex;
+}
+
+.toolbar-right ul
+{
+    display: flex;
+}
+
+.toolbar-right ul li
+{
+    text-decoration: none;
+    list-style: none;
+}
+
+.toolbar-right ul li a
+{
+    position: relative;
+    margin-right: 50px;
+    top: 10px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #f98704;
+    cursor: pointer;
+}
+
+
+
+.hireme-btn, .hireme-btn1
+{
+    width: 170px;
+    height: 50px;
+    border: none;
+    border-radius: 60px;
+    background-color: #f98704;
+    font-size: 20px;
+    color: white;
+}
+
+.hireme-btn-outlined
+{
+    width: 170px;
+    height: 50px;
+    border: none;
+    border-radius: 60px;
+    border: 2px solid #f98704;
+    font-size: 20px;
+    color: #f98704;
+    background-color: white;
+}
+
+.dark-mode
+{
+    height: 30px;
+    width: 70px;
+    background-color: red;
+    position: relative;
+    top: 35px;
+    border-radius: 60px;
+}
+
+.circle
+{
+    height: 29px;
+    width: 29px;
+   
+    cursor: pointer;
+    background-color: blue;
+    border-radius: 60px;
+}
+
+.home
+{
+    display: flex;
+    width: 100%;
+    position: relative;
+    top: 50px;
+    height: 600px;
+}
+
+.home .about-me
+{
+    margin-left: 100px;
+    width: 50%;
+    margin-top: 50px;
+}
+
+header
+{
+    font-size: 25px;
+    color: #f98704;
+    margin-left: 20px;
+}
+.about-me h1
+{
+    font-size: 50px;
+}
+
+.Header
+{
+    font-size: 30px;
+    color: #f98704;
+}
+
+.about-me p{
+    margin-top: 20px;
+}
+
+
+.custom-icon-color {
+    color: #f98704;
+    font-size: 30px;
+    /* Your custom color code */
+}
+
+.custom-icon-color:hover {
+    color: #cc5500;
+    /* Your custom hover color code */
+}
+
+.row
+{
+    margin-top: 20px;
+}
+.col-auto
+{
+    margin: 10px;
+}
+
+.services
+{
+    margin-top: 50px;
+}
+
+.service-row1, .service-row2, .service-row3
+{
+    margin-top: 150px;
+}
+
+.ondiv-image
+{
+    width: 300px;
+    height: 100px;
+    border: 5px solid #f98704;
+    border-radius: 20px;
+    background-color: white;
+    opacity: .5;
+    position: absolute;
+}
+
+.scrollbtn
+{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+
+.ondiv-emoji
+{
+    position: absolute;
+}
+
+.ondiv-text
+{
+    font-size: 25px;
+    margin-top: 32px;
+    text-align: center;
+}
+
+.service-row1
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.service-row2
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.service-row3
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.service-col
+{
+    margin: 50px;
+}
+
+.service-content
+{
+    margin-top: 30px;
+    margin-left: 20px;
+    text-align: justify;
+}
+
+.deployment-service
+{
+    position: absolute;
+    right: -250px;
+}
+
+.scrollbtn
+{
+    border: none;
+}
+
+.scrollbtn:active
+{
+    outline: none;
+}
+
+.input-container {
+    margin-top: 100px;
+    padding: 30px;
+    opacity: .7;
+    width: 50%;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+}
+
+.input-container form {
+    margin-top: 30px;
+}
+
+.input-container form input,
+textarea {
+    outline: 1px solid #f98704;
+    
+}
+
+.copyrights {
+    font-size: 15px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.nav-item
+{
+    display: none;
+}
+
+@media (max-width: 600px) {
+    .nav-item
+    {
+        display: block;
+    }
+    body
+    {
+        margin: 0px;
+    }
+    .portfolio-container
+    {
+        margin: 0px;
+    }
+
+    .home
+    {
+        width: 100%;
+        flex-direction: column;
+        height: fit-content;
+    }
+    .home .about-me
+    {
+        width: 100%;
+        margin: auto;
+    }
+
+    .about-me p
+    {
+        margin: 20px;
+    }
+
+    .about-me h1
+    {
+        margin: 20px;
+    }
+
+    .about-me
+    {
+        margin: 50px;
+    }
+    .hireme-btn, .hireme-btn1
+    {
+        width: 150px;
+        font-size: 15px;
+    }
+
+    .Header
+    {
+        font-size: 25px;
+    }
+    .hireme-btn-outlined
+    {
+        width: 150px;
+        font-size: 15px;
+    }
+    .about-me h1
+    {
+        font-size: 30px;
+    }
+    .project-exp
+    {
+        margin: 0px;
+        width: 100%;
+    }
+    .d-block
+    {
+        height: 10px;
+    }
+    .service-row1
+    {
+        flex-direction: column;
+        margin-top: 50px;
+        top: 0px;
+        position: relative;
+    }
+    .service-row1 .service-col-right .service-content
+    {
+        width: 95%;
+        margin: auto;
+    }
+    .service-row2 .service-col-left .service-content
+    {
+        width: 95%;
+        margin: auto;
+    }
+    .service-row3 .service-col-right .service-content {
+        width: 95%;
+        margin: auto;
+    }
+    .service-row2 {
+        flex-direction: column;
+        margin-top: 50px;
+        top: 0px;
+        position: relative;
+    }
+    .service-row3 {
+        flex-direction: column;
+        margin-top: -50px;
+        top: 0px;
+        position: relative;
+    }
+    .service-col
+    {
+        position: absolute;
+        top: 0px;
+    }
+    .service-content
+    {
+        width: 100%;
+        margin: 0px;
+    }
+    .serviceimage
+    {
+        display: none;
+    }
+    .deployment-service
+    {
+        margin: 0px;
+        height: 100%;
+        width: 100%;
+        position: relative;
+        margin-top: 100px;
+        right: 0px;
+    }
+    .service-head
+    {
+        font-size: 20px;
+    }
+    .myimage
+    {
+        height: 100%;
+        width: 100%;
+    }
+    .input-container
+    {
+        width: 100%;
+    }
+    .row
+    {
+        display: flex;
+        flex-direction: row;
+    }
+    .o-list, .hireme-btn
+    {
+        display: none;
+    }
+    .navbar-nav
+    {
+        display: block;
+    }
+
+}
+
